@@ -50,3 +50,7 @@ set mouse=a
 set history=20 "by default Vim saves your last 8 commands.
 set number "enables line numbers
 colorscheme desert
+
+set foldmethod=syntax "Sets folding to blocks
+set foldlevel=99 "Everything is unfolded at first
+nmap <SPACE> za
