@@ -1,3 +1,13 @@
+" Plugins will be downloaded under the specified directory.
+call plug#begin('~/.vim/plugged')
+
+" Declare the list of plugins.
+Plug 'matze/vim-move'
+Plug 'vhda/verilog_systemverilog.vim'
+
+" List ends here. Plugins become visible to Vim after this call.
+call plug#end()
+
 "The base of this file is 15-122's .vimrc
 
 set nocompatible  "Kill vi-compatibility
@@ -50,7 +60,6 @@ set mouse=a
 set history=20 "by default Vim saves your last 8 commands.
 set number "enables line numbers
 colorscheme desert
-
 set foldmethod=syntax "Sets folding to blocks
 set foldlevel=99 "Everything is unfolded at first
 nmap <SPACE> za
