@@ -4,6 +4,7 @@ call plug#begin('~/.vim/plugged')
 " Declare the list of plugins.
 Plug 'matze/vim-move'
 Plug 'vhda/verilog_systemverilog.vim'
+Plug 'mlr-msft/vim-loves-dafny', {'for': 'dafny'}
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
@@ -63,3 +64,10 @@ colorscheme desert
 set foldmethod=syntax "Sets folding to blocks
 set foldlevel=99 "Everything is unfolded at first
 nmap <SPACE> za
+"pane switching
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
+"custom extension highlighting
+autocmd BufNewFile,BufRead *.ispc set syntax=cpp
